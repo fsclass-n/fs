@@ -14,21 +14,39 @@ print(a) # [4, 1, 2, 3]
 a.insert(3, 5)
 print(a) # [4, 1, 2, 5, 3]
 a.insert(5, 6)
+# a.append(6)
 print(a) # [4, 1, 2, 5, 3, 6]
 
 # remove(값): 삭제
 a = [1, 2, 3, 1, 2, 3]
 a.remove(3)
 print(a) # [1, 2, 1, 2, 3]
+a.remove(3)
+print(a) # [1, 2, 1, 2]
 
 # pop(): 마지막 요소 꺼내기
 a = [1, 2, 3]
 print(a.pop()) # 3
 print(a) # [1, 2]
 # pop(인덱스): 인덱스에 해당하는 요소 꺼내기
+a = [10, 20, 30]
+print(a.pop(1)) # 20
+print(a) # [10, 30]
+
+# count(값): 값에 해당하는 항목 개수
+a = [1, 20, 31, 1, 20, 1, 1]
+print(a.count(20)) # 2
+
+# extend(): 리스트 확장
 a = [1, 2, 3]
-print(a.pop(1)) # 2
-print(a) # [1, 3]
+
+# a.extend([4, 5])
+a += [4, 5]
+
+print(a) # [1, 2, 3, 4, 5]
+b = [6, 7]
+a.extend(b)
+print(a) # [1, 2, 3, 4, 5, 6, 7]
 
 
 
