@@ -49,6 +49,7 @@ else:
     print("걸어간다")
 
 
+# 중첩 if문
 pocket = ['paper', 'phone', 'money']
 card = True
 
