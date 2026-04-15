@@ -18,4 +18,20 @@ print(a)
 def add(a, b):
     print("%d, %d의 합은 %d입니다." % (a, b, a + b))
 
-add(3, 4)
+a = add(3, 4)
+print(a)
+
+def say():
+    print("Hi")
+
+say()
+
+def sub(a, b):
+    return a - b
+
+result = sub(a=7, b=3)
+print(result)
+
+result = sub(b=5, a=3)
+print(result)
+
