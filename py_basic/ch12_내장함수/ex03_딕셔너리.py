@@ -22,6 +22,7 @@ print(list(a.values())) # ['hong', 20, '010-1234-5678', '1118']
 # items()
 print(a.items())
 # dict_items([('name', 'hong'), ('age', 20), ('phone', '010-1234-5678'), ('birth', '1118')])
+
 print(list(a.items()))
 # [('name', 'hong'), ('age', 20), ('phone', '010-1234-5678'), ('birth', '1118')]
 
