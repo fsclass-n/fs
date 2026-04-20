@@ -54,6 +54,6 @@ ___굵게기울임___
 ```
     ![대체텍스트](이미지경로)
 ```
-![마크다운|200](https://w7.pngwing.com/pngs/134/956/png-transparent-markdown-computer-icons-formatted-text-github-watermark-blue-angle-text.png)
-![마크다운|200](https://fsclass-n.github.io/fs/git_basic/markdown.png)
+![마크다운|200](https://w7.pngwing.com/pngs/134/956/png-transparent-markdown-computer-icons-formatted-text-github-watermark-blue-angle-text.png){:width="200px"}
+![마크다운|200](https://fsclass-n.github.io/fs/git_basic/markdown.png){:width="200px"}
 
