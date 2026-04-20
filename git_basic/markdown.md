@@ -55,5 +55,5 @@ ___굵게기울임___
     ![대체텍스트](이미지경로)
 ```
 ![마크다운](https://www.pngwing.com/ko/free-png-nzejf)
-![마크다운](https://www.pngwing.com/ko/free-png-nzejf)
+![마크다운](https://fsclass-n.github.io/fs/git_basic/markdown.png)
 
