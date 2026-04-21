@@ -69,8 +69,8 @@ ___굵게기울임___
 ```
     ![대체텍스트](이미지경로)
 ```
-![마크다운|200](https://w7.pngwing.com/pngs/134/956/png-transparent-markdown-computer-icons-formatted-text-github-watermark-blue-angle-text.png)
-![마크다운|200](https://fsclass-n.github.io/fs/git_basic/git.svg)
+![마크다운|200](https://e7.pngegg.com/pngimages/1009/39/png-clipart-github-computer-icons-repository-github-white-cat-like-mammal-thumbnail.png)
+![마크다운|200](https://fsclass-n.github.io/fs/git_basic/git.png)
 
 
 ### 이모지
