@@ -69,7 +69,7 @@ ___굵게기울임___
 ```
     ![대체텍스트](이미지경로)
 ```
-![마크다운|200](https://e7.pngegg.com/pngimages/1009/39/png-clipart-github-computer-icons-repository-github-white-cat-like-mammal-thumbnail.png)
+![마크다운|200](https://e7.pngegg.com/pngimages/1009/39/png-clipart-github-computer-icons-repository-github-white-cat-like-mammal-thumbnail.png)<br>
 ![마크다운|200](https://fsclass-n.github.io/fs/git_basic/git.png)
 
 
