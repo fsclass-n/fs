@@ -71,3 +71,86 @@ git push [-u] [별칭] [브랜치명]
 git pull
 ```
 
+## 로그 보기
+```
+git log
+git log --oneline
+```
+
+두 브랜치의 차이점 보기
+```
+git log branchB..branchA
+git diff branchB..branchA
+```
+
+한 파일의 히스토리 살펴보기
+```
+git log --follow [파일명]
+```
+
+깃 오브젝트 정보 보기
+```
+git show [오브젝트 체크섬]
+```
+
+
+## 브랜치와 병합
+로컬 브랜치 목록 보기
+```
+git branch
+```
+
+현재 커밋에서 브랜치 만들기
+```
+git branch [새 브랜치명]
+git switch [새 브랜치명]
+git checkout [새 브랜치명]
+```
+
+브랜치 생성과 동시에 이동
+```
+git checkout -b [새 브랜치명]
+git switch -c [새 브랜치명]
+```
+
+브랜치 삭제
+```
+git branch -d [브랜치명]
+```
+
+브랜치 이름 바꾸기
+```
+git branch -m [브랜치명]
+```
+
+현재 브랜치와 지정된 브랜치 병합
+```
+git merge [브랜치명]
+git rebase [브랜치명]
+```
+
+## 임시 저장
+작업 내용 임시 저장
+```
+git stash
+```
+
+임시 저장 목록 보기
+```
+git stash list
+```
+
+가장 최근 임시 저장 꺼내오기 (꺼낸 저장 내용은 목록에서 사라짐)
+```
+git stash pop
+```
+
+임시 저장 내용을 반영하고 스태시 목록에 남져놓기
+```
+git stash apple
+```
+
+임시 저장 내용 반영 없이 삭제하기
+```
+git stash drop
+```
