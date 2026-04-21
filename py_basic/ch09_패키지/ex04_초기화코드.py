@@ -1,0 +1,6 @@
+import game
+# game 안의 __init__.py 가 실행
+# Initializing game ...
+
+from game.graphic.render import render_test
+# Initializing game ...
