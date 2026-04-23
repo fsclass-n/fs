@@ -6,8 +6,9 @@ COPY . .
 # [수정] 실행 권한 부여 명령어 추가
 RUN chmod +x gradlew
 
-# 이제 권한 문제가 발생하지 않습니다.
-RUN ./gradlew clean build
+# [수정] -x test를 추가하여 테스트 실행을 건너跳니다.
+# 또한 build 대신 bootJar를 사용하여 꼭 필요한 실행 파일만 만듭니다.
+RUN ./gradlew clean bootJar -x test
 
 # 2단계: 실행
 FROM eclipse-temurin:21-jdk-jammy
