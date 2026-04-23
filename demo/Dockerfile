@@ -1,4 +1,8 @@
-# ... (앞부분 Java 빌드 단계 동일)
+# 1단계: 빌드 단계에 'build'라는 별칭 부여
+FROM eclipse-temurin:21-jdk-jammy AS build
+WORKDIR /app
+COPY . .
+RUN ./gradlew clean build
 
 # 2단계: 실행
 FROM eclipse-temurin:21-jdk-jammy
