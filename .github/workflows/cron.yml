@@ -5,15 +5,17 @@ on:
     - cron: '*/12 * * * *'
   workflow_dispatch: 
 
+# 전역 환경 변수 설정: Node 20 경고를 무시하고 Node 24를 강제 사용함
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # v3 -> v4로 업데이트
       - name: 코드 체크아웃
         uses: actions/checkout@v4
 
-      # v4 -> v5로 업데이트
       - name: 파이썬 환경 설정
         uses: actions/setup-python@v5
         with:
@@ -23,7 +25,7 @@ jobs:
         run: pip install requests
 
       - name: 크롤링 실행
-        # 폴더 위치를 옮겼으므로 경로가 demo/crawler/crawler.py 인지 확인하세요!
+        # 파일 경로가 프로젝트 루트 기준이므로 demo/ 를 붙여야 합니다.
         run: python demo/crawler/crawler.py
 
       - name: 변경된 JSON 파일 저장 (Git Push)
