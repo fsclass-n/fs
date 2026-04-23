@@ -92,7 +92,7 @@ env/
 .mypy_cache/
 
 # Generated crawler output data
-data/movies.json
+# data/movies.json
 
 # If storing all generated data files
 data/*.json

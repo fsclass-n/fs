@@ -1,5 +1,4 @@
-flask
+# 웹 데이터 수집용
 requests
-gunicorn
 # TiDB 연결용 (예시)
 pymysql
