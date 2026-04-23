@@ -5,6 +5,7 @@ s1.add(4)
 print(s1) # {1, 2, 3, 4}
 
 # update(): 여러 요소 추가
+# s1.add([5, 6, 7]) # TypeError
 s1.update([5, 6, 7])
 print(s1) # {1, 2, 3, 4, 5, 6, 7}
 
@@ -12,7 +13,7 @@ print(s1) # {1, 2, 3, 4, 5, 6, 7}
 s1 = set([10, 20, 30])
 s1.remove(20)
 print(s1) # {10, 30}
-# s1.remove(40) # error
+# s1.remove(40) # KeyError
 print(s1)
 
 # discard(): 특정 값 제거

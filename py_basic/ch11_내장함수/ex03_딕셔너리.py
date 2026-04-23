@@ -26,7 +26,7 @@ print(a.items())
 print(list(a.items()))
 # [('name', 'hong'), ('age', 20), ('phone', '010-1234-5678'), ('birth', '1118')]
 
-# clear(): 아이템 삭제
+# clear(): 모든 아이템 삭제
 a.clear()
 print(a) # {}
 
@@ -40,16 +40,17 @@ a = {
 }
 # get(): key로 value 얻기
 # key로 value 얻기
-print(a['name'])
+print(a['name']) # hong
 # get()
-print(a.get('name'))
+print(a.get('name')) # hong
 
 # 없는 키를 사용하면?
-# print(a['address']) # error
+# print(a['zipcode']) # error
 print(a.get('zipcode')) # None
 
 # get(키, [기본값])
 print(a.get('address', '경기도 성남시 분당구')) # 성남시 분당구
+print(a.get('zipcode', '12820')) # 12820
 
 # in 키워드: 키의 유무, 있으면 True, 없으면 False
 print('name' in a) # True
@@ -61,6 +62,7 @@ print(phone) # 010-1234-5678
 print(a)
 # {'name': 'hong', 'age': 20, 'birth': '1118', 'address': '성남시 분당구'}
 
+# email = a.pop('email') # KeyError
 email = a.pop('email', '정보없음')
 print(email) # 정보없음
 print(a)
