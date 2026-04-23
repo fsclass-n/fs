@@ -2,7 +2,7 @@ name: 10분 주기 데이터 자동 적재
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/12 * * * *'
   workflow_dispatch: 
 
 jobs:
