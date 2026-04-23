@@ -95,7 +95,7 @@ env/
 # data/movies.json
 
 # If storing all generated data files
-data/*.json
+# data/*.json
 data/*.csv
 data/*.xlsx
 
