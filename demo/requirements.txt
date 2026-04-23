@@ -1,0 +1,5 @@
+flask
+requests
+gunicorn
+# TiDB 연결용 (예시)
+pymysql

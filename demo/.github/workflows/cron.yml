@@ -1,0 +1,35 @@
+name: 10분 주기 데이터 자동 적재
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v3
+
+      - name: 파이썬 환경 설정
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install requests
+
+      - name: 크롤링 실행
+        run: python crawler/crawler.py
+
+      - name: 변경된 JSON 파일 저장
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/movies.json
+          git commit -m "Update movies.json [skip ci]" || echo "No changes"
+          git push
+
+      - name: 서버에 적재 명령 호출
+        run: curl -X GET "https://megabox-kr.onrender.com/load"
