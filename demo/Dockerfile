@@ -1,7 +1,12 @@
-# 1단계: 빌드 단계에 'build'라는 별칭 부여
+# 1단계: 빌드
 FROM eclipse-temurin:21-jdk-jammy AS build
 WORKDIR /app
 COPY . .
+
+# [수정] 실행 권한 부여 명령어 추가
+RUN chmod +x gradlew
+
+# 이제 권한 문제가 발생하지 않습니다.
 RUN ./gradlew clean build
 
 # 2단계: 실행
