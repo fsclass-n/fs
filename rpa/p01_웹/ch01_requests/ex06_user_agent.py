@@ -2,6 +2,7 @@ import requests
 from requests.exceptions import HTTPError, RequestException
 
 def fetch_wikipedia_page(title):
+    # base_url = f"https://megabox.co.kr/"
     base_url = f"https://ko.wikipedia.org/wiki/"
     url = base_url + title
 
@@ -18,6 +19,7 @@ def fetch_wikipedia_page(title):
     # HTTP 요청을 수행하고 오류를 처리한다.
     try: 
         # timeout=10: 서버가 응답을 주지 않고 무한정 버틸 때, 10초 뒤에 연결을 강제로 종료합니다.
+        # response = requests.get(url)
         response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status() # HTTP 오류 시 예외 발생
         return response
@@ -46,6 +48,6 @@ try:
             my_file.write(chunk)
 
 except HTTPError as http_error:
-    print("http_error")
+    print(http_error)
 except RequestException as req_error:
-    print("req_error")
+    print(req_error)

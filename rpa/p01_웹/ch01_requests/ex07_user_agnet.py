@@ -3,13 +3,12 @@ import requests
 # 1. 브라우저 정보를 담은 헤더 설정 (크롬 브라우저 예시)
 headers = {
     "User-Agent": (
-            "response_text_practice/1.0 (learning script; "
-            "contact: example@example.com)"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"
     )
 }
 
 url_success = "https://ko.wikipedia.org/wiki/"
-url_fail = "https://www.megabox.co.kr/"
+url_fail = "https://www.megabox.co.kr/110"
 
 urls_to_check = [url_success, url_fail]
 
@@ -17,7 +16,7 @@ for url in urls_to_check:
     try: 
         # 2. 요청 시 headers를 함께 보냄
         # response = requests.get(url)
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         
     except requests.exceptions.HTTPError as e:
