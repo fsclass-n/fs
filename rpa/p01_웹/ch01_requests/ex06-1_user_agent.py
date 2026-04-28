@@ -8,15 +8,15 @@ headers = {
 }
 
 url_success = "https://ko.wikipedia.org/wiki/"
-url_fail = "https://www.megabox.co.kr/110"
+url_fail = "https://www.megabox.co.kr/"
 
 urls_to_check = [url_success, url_fail]
 
 for url in urls_to_check:
     try: 
         # 2. 요청 시 headers를 함께 보냄
-        # response = requests.get(url)
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url)
+        # response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         
     except requests.exceptions.HTTPError as e:

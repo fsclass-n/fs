@@ -2,8 +2,8 @@ import requests
 from requests.exceptions import HTTPError, RequestException
 
 def fetch_wikipedia_page(title):
-    # base_url = f"https://megabox.co.kr/"
-    base_url = f"https://ko.wikipedia.org/wiki/"
+    base_url = f"https://megabox.co.kr"
+    # base_url = f"https://ko.wikipedia.org/wiki/"
     url = base_url + title
 
     # Wikipedia User-Agent 정책에 따라 고유한 User-Agent를 사용해야 한다.
