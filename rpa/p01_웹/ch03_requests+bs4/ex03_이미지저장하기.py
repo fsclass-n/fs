@@ -8,7 +8,8 @@ os.path.join(디렉토리, 파일명)
 '''
 
 import requests, os
-
+# https://xkcd.com
+# https://imgs.xkcd.com/comics/soniferous_aether.png
 image_url = "//imgs.xkcd.com/comics/soniferous_aether.png"
 
 if not image_url.startswith("http"):
@@ -25,14 +26,14 @@ try:
     file_name = os.path.basename(image_url) #soniferous_aether.png
     save_path = os.path.join(save_folder, file_name)
 
-    print(save_path)
+    print(save_path) # xkcd_comics\soniferous_aether.png
 
     with open(save_path, "wb") as image_file:
         for chunk in response.iter_content(chunk_size=100000):
             if chunk:
                 image_file.write(chunk)
     
-    print("이미지 저장 성공", file_name)
+    print("이미지 저장 성공", file_name) # 이미지 저장 성공 soniferous_aether.png
 
 except Exception as e:
     print("에러:", e)
