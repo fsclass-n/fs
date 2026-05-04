@@ -43,18 +43,6 @@
   },
   {
     "rank": 0,
-    "title": "르누아르",
-    "openDate": "",
-    "rating": ""
-  },
-  {
-    "rank": 0,
-    "title": "마녀배달부 키키",
-    "openDate": "",
-    "rating": ""
-  },
-  {
-    "rank": 0,
     "title": "피어스",
     "openDate": "",
     "rating": ""
@@ -67,7 +55,19 @@
   },
   {
     "rank": 0,
+    "title": "마녀배달부 키키",
+    "openDate": "",
+    "rating": ""
+  },
+  {
+    "rank": 0,
     "title": "왕과 사는 남자",
+    "openDate": "",
+    "rating": ""
+  },
+  {
+    "rank": 0,
+    "title": "르누아르",
     "openDate": "",
     "rating": ""
   },
@@ -79,19 +79,13 @@
   },
   {
     "rank": 0,
-    "title": "신극장판 은혼: 요시와라 대염상",
-    "openDate": "",
-    "rating": ""
-  },
-  {
-    "rank": 0,
     "title": "내 이름은",
     "openDate": "",
     "rating": ""
   },
   {
     "rank": 0,
-    "title": "빌리 아일리시 - 히트 미 하드 앤드 소프트: 더 투어",
+    "title": "신극장판 은혼: 요시와라 대염상",
     "openDate": "",
     "rating": ""
   },
@@ -103,7 +97,7 @@
   },
   {
     "rank": 0,
-    "title": "뮤지컬 장수탕 선녀님",
+    "title": "빌리 아일리시 - 히트 미 하드 앤드 소프트: 더 투어",
     "openDate": "",
     "rating": ""
   },
@@ -116,6 +110,12 @@
   {
     "rank": 0,
     "title": "리 크로닌의 미이라",
+    "openDate": "",
+    "rating": ""
+  },
+  {
+    "rank": 0,
+    "title": "[잭클린 이모 관] 악마는 프라다를 입는다 2",
     "openDate": "",
     "rating": ""
   }
