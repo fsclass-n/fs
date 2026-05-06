@@ -1,6 +1,12 @@
 # pip install imap_tools
 from imap_tools import MailBox
 from account import *
+from datetime import datetime
+from zoneinfo import ZoneInfo # Python 3.9 이상
+
+# 한국 시간대(Asia/Seoul) 설정
+now_korea = datetime.now(ZoneInfo("Asia/Seoul"))
+print(now_korea.strftime("%Y-%m-%d %H:%M:%S"))
 
 # 보낼때: smtp.gmail.com, 587
 # 받을때: imap.gmail.com, 993
@@ -17,7 +23,7 @@ for msg in mailbox.fetch(limit=1, reverse=True):
     # print("비밀참조자:", msg.bcc)
     print("날짜:", msg.date)
     print("본문내용:", msg.text)
-    print("HTML 메시지:", msg.html)
+    # print("HTML 메시지:", msg.html)
     print("="*50)
 
     # 첨부 파일 정보 터미널 출력
