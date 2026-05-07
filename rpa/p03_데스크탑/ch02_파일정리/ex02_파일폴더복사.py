@@ -1,4 +1,5 @@
 # shutil.copy(src, dst)
+# shutil.copyfile(src, dst)
 # shutil.copytree(src, dst)
 
 import shutil
@@ -23,12 +24,14 @@ def copy_tree_example(base:Path):
     # spam 디렉토리 전체를 spam_backup으로 복사
     dst = base / "spam_backup"
 
+    # 만약 폴더가 존재하면 True, 아니면 False
     if dst.exists():
+        # 폴더/파일 삭제
         shutil.rmtree(dst)
 
     copied_tree = shutil.copytree(base / "spam", dst)
     print("copy tree 결과:", copied_tree)
-
+    # copy tree 결과: d:\wi\git\fs\rpa\p03_데스크탑\ch02_파일정리\연습\spam_backup
 
 
 if __name__ == "__main__":
