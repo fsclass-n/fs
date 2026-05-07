@@ -22,7 +22,7 @@ def write_zip(file_path:Path):
 
 if __name__ == '__main__':
     base = Path(__file__).parent / "연습"
-    
+
     target = make_text(base)
     print(target)
 
