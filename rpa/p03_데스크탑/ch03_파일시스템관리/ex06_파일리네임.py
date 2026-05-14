@@ -1,10 +1,10 @@
 import os, shutil, re
 from pathlib import Path
 
-# 매출보고서2026년01월01일.xlsx
-# 매출보고서_2026_01_01.xlsx
+# 매출보고서_2026-01-01.txt
+# -> 매출보고서_20260101.txt
 
-DATE_KR = re.compile(r'(.*?)(\d{4})년(\d{2})월(\d{2})일(.*)')
+DATE_KR = re.compile(r'(.*?)_(\d{4})-(\d{2})-(\d{2})(.*)')
 
 # r''	    Raw 문자열 (\를 그대로 사용)
 
@@ -44,7 +44,7 @@ def rename_dates(root: Path):
             # a, b, c = (1, 2, 3) -> a=1, b=2, c=3
             pre, yyyy, mm, dd, suf = match.groups()
 
-            new_name = f"{pre}_{yyyy}-{mm}-{dd}{suf}"
+            new_name = f"{pre}_{yyyy}{mm}{dd}{suf}"
 
             dst = p / new_name
 
