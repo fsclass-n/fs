@@ -7,7 +7,7 @@ path = cur_dir / "사진.jpg"
 
 im = Image.open(path)
 
-print("파일명:", im.filename)
+print("경로/파일명:", im.filename)
 print("형식:", im.format) # 형식: JPEG
 
 if hasattr(im, "format_description"):
