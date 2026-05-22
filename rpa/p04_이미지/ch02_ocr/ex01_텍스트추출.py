@@ -8,7 +8,7 @@ def read_image(img_path):
     return Image.open(img_path)
 
 def ocr_to_text(img):
-    text = tess.image_to_string(img, lang="kor+eng")
+    text = tess.image_to_string(img, lang="kor")
     return text
 
 def save_text(out_file, raw):
@@ -19,10 +19,10 @@ def save_text(out_file, raw):
 
 
 if __name__ == "__main__":
-    img_path = Path(__file__).parent / "data/example1.png"
+    img_path = Path(__file__).parent / "data/example2.jpg"
 
     if not img_path.exists():
-        print("이미지 없음: example1.png")
+        print("이미지 없음: example2.jpg")
         exit(1)
 
     print("[1] 이미지 열기:", img_path.as_posix())
