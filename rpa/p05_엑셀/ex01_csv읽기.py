@@ -1,13 +1,3 @@
-import pandas as pd
-from pathlib import Path
-
-cur_dir=Path(__file__).parent
-df=pd.read_csv(cur_dir / "data.csv")
-
-print(df)
-
-#---------------------------------------------------
-
 # CSV 파일 읽기
 import csv, os
 # a.csv 파일이 있는 폴더로 이동
